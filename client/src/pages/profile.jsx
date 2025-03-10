@@ -21,14 +21,16 @@ function Profile() {
   const [data, setData] = useState({
     userName: "",
     fullName: "",
-    description: "",
+    skills: "",
+    experience: "",
+    location: "",
   });
 
   useEffect(() => {
     const handleData = { ...data };
     if (userInfo) {
       if (userInfo?.username) handleData.userName = userInfo?.username;
-      if (userInfo?.description) handleData.description = userInfo?.description;
+      if (userInfo?.skills) handleData.skills = userInfo?.skills;
       if (userInfo?.fullName) handleData.fullName = userInfo?.fullName;
       console.log({ userInfo });
 
@@ -68,6 +70,7 @@ function Profile() {
         { ...data },
         { withCredentials: true }
       );
+      console.log(response.data);
       if (response.data.userNameError) {
         setErrorMessage("Enter a Unique Username");
       } else {
@@ -115,7 +118,7 @@ function Profile() {
               <span className="text-red-600 font-bold">{errorMessage}</span>
             </div>
           )}
-          <h2 className="text-3xl">Welocme to Fiverr Clone</h2>
+          <h2 className="text-3xl">Welocme to MindLancer</h2>
           <h4 className="text-xl">
             Please complete your profile to get started
           </h4>
@@ -204,16 +207,42 @@ function Profile() {
               </div>
             </div>
             <div className="flex flex-col w-[500px]">
-              <label className={labelClassName} htmlFor="description">
-                Description
+              <label className={labelClassName} htmlFor="skills">
+                skills
               </label>
               <textarea
-                name="description"
-                id="description"
-                value={data.description}
+                name="skills"
+                id="skills"
+                value={data.skills}
                 onChange={handleChange}
                 className={inputClassName}
-                placeholder="description"
+                placeholder="skills"
+              ></textarea>
+            </div>
+            <div className="flex flex-col w-[500px]">
+              <label className={labelClassName} htmlFor="experience">
+                experience
+              </label>
+              <textarea
+                name="experience"
+                id="experience"
+                value={data.experience}
+                onChange={handleChange}
+                className={inputClassName}
+                placeholder="experience"
+              ></textarea>
+            </div>
+            <div className="flex flex-col w-[500px]">
+              <label className={labelClassName} htmlFor="location">
+                location
+              </label>
+              <textarea
+                name="location"
+                id="location"
+                value={data.location}
+                onChange={handleChange}
+                className={inputClassName}
+                placeholder="location"
               ></textarea>
             </div>
             <button
