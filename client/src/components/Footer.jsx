@@ -61,8 +61,8 @@ function Footer() {
       links: [
         { name: "Help & Support", link: "#" },
         { name: "Trust & Safety", link: "#" },
-        { name: "Selling on Fiverr", link: "#" },
-        { name: "Buying on Fiverr", link: "#" },
+        { name: "Selling on Mindlancer", link: "#" },
+        { name: "Buying on mindlancer", link: "#" },
       ],
     },
     {
@@ -84,14 +84,14 @@ function Footer() {
     {
       headerName: "Move From Fiverr",
       links: [
-        { name: "Fiverr Business", link: "#" },
-        { name: "Fiverr Pro", link: "#" },
-        { name: "Fiverr Logo Maker", link: "#" },
-        { name: "Fiverr Guides", link: "#" },
+        { name: "Mindlancer Business", link: "#" },
+        { name: "Mindlancer Pro", link: "#" },
+        { name: "Mindlancer Logo Maker", link: "#" },
+        { name: "Mindlancer Guides", link: "#" },
         { name: "Get Inspired", link: "#" },
-        { name: "Fiverr Select", link: "#" },
+        { name: "Mindlancer Select", link: "#" },
         { name: "ClearVoice", link: "#" },
-        { name: "Fiverr Workspace", link: "#" },
+        { name: "Mindlancer Workspace", link: "#" },
         { name: "Learn", link: "#" },
         { name: "Working Not Working", link: "#" },
       ],

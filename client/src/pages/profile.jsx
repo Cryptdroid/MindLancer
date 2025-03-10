@@ -70,6 +70,7 @@ function Profile() {
         { ...data },
         { withCredentials: true }
       );
+      console.log(response.data);
       if (response.data.userNameError) {
         setErrorMessage("Enter a Unique Username");
       } else {
@@ -117,7 +118,7 @@ function Profile() {
               <span className="text-red-600 font-bold">{errorMessage}</span>
             </div>
           )}
-          <h2 className="text-3xl">Welocme to Fiverr Clone</h2>
+          <h2 className="text-3xl">Welocme to MindLancer</h2>
           <h4 className="text-xl">
             Please complete your profile to get started
           </h4>
@@ -241,7 +242,7 @@ function Profile() {
                 value={data.location}
                 onChange={handleChange}
                 className={inputClassName}
-                placeholder="experience"
+                placeholder="location"
               ></textarea>
             </div>
             <button
