@@ -6,6 +6,7 @@ import HeroBanner from "../components/Landing/HeroBanner";
 import PopularServices from "../components/Landing/PopularServices";
 import Services from "../components/Landing/Services";
 import { useStateProvider } from "../context/StateContext";
+import  Cursor from "../components/Cursor";
 import React from "react";
 
 function Index() {
@@ -13,6 +14,7 @@ function Index() {
 
   return (
     <div>
+      <Cursor />      
       <HeroBanner />
       <Companies />
       <PopularServices />
