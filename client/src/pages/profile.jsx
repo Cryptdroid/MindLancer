@@ -137,9 +137,7 @@ function Profile() {
                     className="rounded-full"
                   />
                 ) : (
-                  <span className="text-6xl text-white">
-                    {userInfo.email[0].toUpperCase()}
-                  </span>
+                  <span className="text-white text-4xl"></span>
                 )}
                 <div
                   className={`absolute bg-slate-400 h-full w-full rounded-full flex items-center justify-center   transition-all duration-100  ${
