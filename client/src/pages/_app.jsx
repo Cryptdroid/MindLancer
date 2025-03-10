@@ -39,6 +39,7 @@ export default function App({ Component, pageProps }) {
     <StateProvider initialState={initialState} reducer={reducer}>
       <div className="relative flex flex-col h-screen justify-between">
         <Navbar />
+        <Cursor/>
         <div
           className={`${
             router.pathname !== "/" ? "mt-36" : ""
